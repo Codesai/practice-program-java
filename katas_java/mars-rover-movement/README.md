@@ -1,9 +1,9 @@
 # Mars Rover implementation exercise
 
 ### Description
-In this exercise we'll implement from scratch part of the [Mars Rover kata](https://anirudhbhargava7.wordpress.com/category/katas/). 
+In this exercise we'll implement from scratch part of the Mars Rover kata. 
 
-This is a summary of the part of the behavior of the rover that we'll implement:
+This is a summary of the behavior of the rover that we'll implement:
 
  - It's located on a grid at some point with coordinates (x,y) and facing a direction encoded with a character.
 
