@@ -1,3 +1,5 @@
+package mars_rover;
+
 public class Rover {
 
     private String direction;

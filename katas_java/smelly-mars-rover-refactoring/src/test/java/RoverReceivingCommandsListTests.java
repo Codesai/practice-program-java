@@ -1,5 +1,6 @@
 import static org.junit.Assert.assertEquals;
 
+import mars_rover.Rover;
 import org.junit.Test;
 
 public class RoverReceivingCommandsListTests {
