@@ -8,3 +8,7 @@
 
 ### Session 3: Adding a new feature to an existing code base.
 [Supporting ESA commands as well](https://github.com/Codesai/practice_program/tree/master/katas_java/03-mars-rover-adding-new-feature)
+
+### Session 4: Working with code we do not own.
+[Brownish Greenfield Gilded Rose Kata*](https://github.com/Codesai/practice_program/tree/master/katas_java/04-working-with-code-we-do-not-own)
+
