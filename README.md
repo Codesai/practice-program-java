@@ -17,3 +17,6 @@
 
 ### Session 6: Refactoring to Hexagonal Architecture 2.
 [Birthday Greetings Kata 2](https://github.com/Codesai/practice_program/tree/master/katas_java/06-refactoring-to-hexagonal-architecture-2)
+
+### Session 7: Outside-in TDD and test doubles.
+[Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program/tree/master/katas_java/07-outside-in-with-ohce-kata)
