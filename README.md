@@ -20,3 +20,6 @@
 
 ### Session 7: Outside-in TDD and test doubles.
 [Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program/tree/master/katas_java/07-outside-in-with-ohce-kata)
+
+### Session 8: Outside-in TDD, CRC cards and test doubles.
+[Outside-in TDD with Bank Account kata](https://github.com/Codesai/practice_program/tree/master/katas_java/08-outside-in-with-bank-kata)
