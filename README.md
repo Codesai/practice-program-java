@@ -7,7 +7,7 @@
 [Refactoring a smelly Mars Rover's code](02_smelly-mars-rover-refactoring)
 
 ### Session 3a: Adding a new feature to an existing code base.
-[Supporting ESA commands as well (1)](https://github.com/Codesai/practice_program/tree/master/katas_java/03a-mars-rover-adding-new-feature)
+[Supporting ESA commands as well (1)](./03a-mars-rover-adding-new-feature)
 
 ### Session 3b: Adding a new feature to an existing code base.
 [Supporting ESA commands as well (2)](https://github.com/Codesai/practice_program/tree/master/katas_java/03b-mars-rover-adding-new-feature)
