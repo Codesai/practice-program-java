@@ -15,14 +15,17 @@
 ### Session 4: Working with code we do not own.
 [Brownish Greenfield Gilded Rose Kata](https://github.com/Codesai/practice_program/tree/master/katas_java/04-working-with-code-we-do-not-own)
 
-### Session 5: Refactoring to Hexagonal Architecture.
-[Birthday Greetings Kata](https://github.com/Codesai/practice_program/tree/master/katas_java/05-refactoring-to-hexagonal-architecture)
+### Session 5: Refactoring away from an awful usage of inheritance.
+[Beverage Prices refactoring kata](https://github.com/Codesai/practice_program/tree/master/katas_java/05-refactoring-awful-inheritance-use-with-beverage-prices-kata)
 
-### Session 6: Refactoring to Hexagonal Architecture 2.
-[Birthday Greetings Kata 2](https://github.com/Codesai/practice_program/tree/master/katas_java/06-refactoring-to-hexagonal-architecture-2)
+### Session 6: Refactoring to Hexagonal Architecture.
+[Birthday Greetings Kata](https://github.com/Codesai/practice_program/tree/master/katas_java/06-refactoring-to-hexagonal-architecture)
 
-### Session 7: Outside-in TDD and test doubles.
-[Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program/tree/master/katas_java/07-outside-in-with-ohce-kata)
+### Session 7: Refactoring to Hexagonal Architecture 2.
+[Birthday Greetings Kata 2](https://github.com/Codesai/practice_program/tree/master/katas_java/07-refactoring-to-hexagonal-architecture-2)
 
-### Session 8: Outside-in TDD, CRC cards and test doubles.
-[Outside-in TDD with Bank Account kata](https://github.com/Codesai/practice_program/tree/master/katas_java/08-outside-in-with-bank-kata)
+### Session 8: Outside-in TDD and test doubles.
+[Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program/tree/master/katas_java/08-outside-in-with-ohce-kata)
+
+### Session 9: Outside-in TDD, CRC cards and test doubles.
+[Outside-in TDD with Bank Account kata](https://github.com/Codesai/practice_program/tree/master/katas_java/09-outside-in-with-bank-kata)
