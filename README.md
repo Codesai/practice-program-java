@@ -25,7 +25,7 @@
 [Birthday Greetings Kata 2](https://github.com/Codesai/practice_program/tree/master/katas_java/07-refactoring-to-hexagonal-architecture-2)
 
 ### Session 8: Doing TDD on legacy code.
-[Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program/tree/master/katas_java/08-doing-tdd-on-legacy-code)
+[TextConverter kata](https://github.com/Codesai/practice_program/tree/master/katas_java/08-doing-tdd-on-legacy-code)
 
 ### Session 9: Outside-in TDD and test doubles.
 [Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program/tree/master/katas_java/09-outside-in-with-ohce-kata)
