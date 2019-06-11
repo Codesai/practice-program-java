@@ -24,8 +24,11 @@
 ### Session 7: Refactoring to Hexagonal Architecture 2.
 [Birthday Greetings Kata 2](https://github.com/Codesai/practice_program/tree/master/katas_java/07-refactoring-to-hexagonal-architecture-2)
 
-### Session 8: Outside-in TDD and test doubles.
-[Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program/tree/master/katas_java/08-outside-in-with-ohce-kata)
+### Session 8: Doing TDD on legacy code.
+[Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program/tree/master/katas_java/08-doing-tdd-on-legacy-code)
 
-### Session 9: Outside-in TDD, CRC cards and test doubles.
-[Outside-in TDD with Bank Account kata](https://github.com/Codesai/practice_program/tree/master/katas_java/09-outside-in-with-bank-kata)
+### Session 9: Outside-in TDD and test doubles.
+[Outside-in TDD with Ohce kata](https://github.com/Codesai/practice_program/tree/master/katas_java/09-outside-in-with-ohce-kata)
+
+### Session 10: Outside-in TDD, CRC cards and test doubles.
+[Outside-in TDD with Bank Account kata](https://github.com/Codesai/practice_program/tree/master/katas_java/10-outside-in-with-bank-kata)

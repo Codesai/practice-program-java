@@ -5,6 +5,8 @@ import birthdaygreetings.core.OurDate;
 import birthdaygreetings.infrastructure.repositories.FileEmployeesRepository;
 import org.junit.Before;
 import org.junit.Test;
+import birthdaygreetings.core.GreetingsSender;
+import birthdaygreetings.infrastructure.greetings_senders.SmtpGreetingsSender;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -27,19 +29,21 @@ public class BirthdayServiceAcceptanceTest {
     public void setUp() throws Exception {
         messagesSent = new ArrayList<>();
 
-        service = new BirthdayService(new FileEmployeesRepository(EMPLOYEES_FILE_PATH)) {
+        GreetingsSender greetingsSender = new SmtpGreetingsSender(SMTP_HOST, SMTP_PORT, FROM) {
             @Override
             protected void sendMessage(Message msg) throws MessagingException {
                 messagesSent.add(msg);
             }
         };
+
+        service = new BirthdayService(new FileEmployeesRepository(EMPLOYEES_FILE_PATH), greetingsSender);
     }
 
     @Test
     public void baseScenario() throws Exception {
         OurDate today = ourDateFromString("2008/10/08");
 
-        service.sendGreetings(today, SMTP_HOST, SMTP_PORT, FROM);
+        service.sendGreetings(today);
 
         assertEquals("message not sent?", 1, messagesSent.size());
         Message message = messagesSent.get(0);
@@ -53,7 +57,7 @@ public class BirthdayServiceAcceptanceTest {
     public void willNotSendEmailsWhenNobodysBirthday() throws Exception {
         OurDate today = ourDateFromString("2008/01/01");
 
-        service.sendGreetings(today, SMTP_HOST, SMTP_PORT, FROM);
+        service.sendGreetings(today);
 
         assertEquals(0, messagesSent.size());
     }
