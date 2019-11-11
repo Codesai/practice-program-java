@@ -32,3 +32,6 @@
 
 ### Session 10: Outside-in TDD, CRC cards and test doubles.
 [Outside-in TDD with Bank Account kata](https://github.com/Codesai/practice_program/tree/master/katas_java/10-outside-in-with-bank-kata)
+
+### Session 11: Outside-in TDD, CRC cards and test doubles (II).
+[Outside-in TDD with Unusual Spending Kata](https://github.com/Codesai/practice_program/tree/master/katas_java/11-outside-in-with-unusual-spending-alert-service)
