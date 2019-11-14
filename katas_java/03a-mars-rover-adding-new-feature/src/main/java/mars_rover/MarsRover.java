@@ -2,58 +2,57 @@ package mars_rover;
 
 public class MarsRover {
 
-    private static final int MOVEMENT_DELTA = 1;
-    private Coordinates coordinates;
-    private Direction direction;
+    private Vector vector;
 
     public MarsRover(int x, int y, String direction) {
-        this.coordinates = new Coordinates(x, y);
-        this.direction = Direction.parse(direction);
+        this.vector = new Vector(new Coordinates(x, y), Direction.parse(direction));
     }
 
     public void receive(String commandsSequence) {
-        for (String command : commandsSequence.split("")) {
-            executeCommand(command);
+        for (String commandCode : commandsSequence.split("")) {
+            Command command = null;
+            if (commandCode.equals("r")) {
+                command = new TurnRight();
+            } else if (commandCode.equals("l")) {
+                command = new TurnLeft();
+            } else if (commandCode.equals("f")) {
+                command = new MoveForward();
+            } else if (commandCode.equals("b")) {
+                command = new MoveBackward();
+            } else {
+                command = new UnknownCommand();
+            }
+            command.execute(vector);
         }
-    }
-
-    private void executeCommand(String command) {
-        if (command.equals("r")) {
-            direction = direction.turnRight();
-        } else if (command.equals("l")) {
-            direction = direction.turnLeft();
-        } else if (command.equals("f")) {
-            coordinates = direction.moveForward(coordinates, MOVEMENT_DELTA);
-        } else if (command.equals("b")) {
-            coordinates = direction.moveBackwards(coordinates, MOVEMENT_DELTA);
-        }
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof MarsRover)) return false;
-
-        MarsRover marsRover = (MarsRover) o;
-
-        if (coordinates != null ? !coordinates.equals(marsRover.coordinates) : marsRover.coordinates != null)
-            return false;
-        return direction == marsRover.direction;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = coordinates != null ? coordinates.hashCode() : 0;
-        result = 31 * result + (direction != null ? direction.hashCode() : 0);
-        return result;
     }
 
     @Override
     public String toString() {
-        return "MarsRover{" +
-            "coordinates=" + coordinates +
-            ", direction=" + direction +
-            '}';
+        return "MarsRover [vector=" + vector + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((vector == null) ? 0 : vector.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        MarsRover other = (MarsRover) obj;
+        if (vector == null) {
+            if (other.vector != null)
+                return false;
+        } else if (!vector.equals(other.vector))
+            return false;
+        return true;
     }
 }
