@@ -4,8 +4,8 @@ Practice program to build up code skills through katas, readings and talks.
 
 Run before at:
 
-* Magento, Merkle (partially), Trovit, Mango (partially) and Properati
+* Magento, Merkle, Trovit, Mango, Properati and Genially.
 
 Currently being run at:
 
-* Audiense and Genially.
+* Audiense and Aida.
